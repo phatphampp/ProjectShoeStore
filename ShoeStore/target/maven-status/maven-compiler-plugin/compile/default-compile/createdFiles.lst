@@ -1,0 +1,4 @@
+dao\ProductDao.class
+RowMapper\ProductRowMapper.class
+controller\ProductController.class
+model\ProductModel.class

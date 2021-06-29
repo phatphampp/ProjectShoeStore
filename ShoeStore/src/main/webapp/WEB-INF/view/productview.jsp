@@ -52,7 +52,7 @@
                             <div class="col-md-3 col-sm-6" style="height: 400px; width: 292px; text-align: center; margin-top: 50px; ">
                                 <div class="single-shop-product">
                                     <div class="product-image">
-                                        <img src="./image/${prod.image}" alt="${prod.image}" height="260px" width="230px">
+                                        <img src="/ShoeStore/image/${prod.image}" alt="${prod.image}" height="260px" width="230px">
                                     </div>
                                     <h3><a>${prod.prodName}</a></h2>
                                     <ins>${prod.price}</ins>

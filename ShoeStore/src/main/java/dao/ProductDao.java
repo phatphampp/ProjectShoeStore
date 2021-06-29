@@ -29,4 +29,9 @@ public class ProductDao {
         String query = "select * from Product where prodName LIKE '%" + keyword + "%'";
         return template.query(query, new ProductRowMapper());
     }
+
+    public ProductModel getById(int id){
+        String sql = "select * from Product where id=?";
+        return template.queryForObject(sql, new Object[]{id}, new ProductRowMapper());
+    }
 }

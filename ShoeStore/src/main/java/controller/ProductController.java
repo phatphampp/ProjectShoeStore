@@ -36,4 +36,11 @@ public class ProductController {
         }
         return new ModelAndView("productview", "list",lst);
     }
+    
+    @RequestMapping(value = "/product/detail", method = RequestMethod.GET)
+    public ModelAndView productDetail_view(HttpServletRequest request){
+        int prodId = Integer.parseInt(request.getParameter("prodId"));        
+        ProductModel prod = dao.getById(prodId);
+        return new ModelAndView("productdetailview", "prod",prod);
+    }
 }

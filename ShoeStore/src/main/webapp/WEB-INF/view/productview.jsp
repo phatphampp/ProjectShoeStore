@@ -39,7 +39,7 @@
                         <button type="submit" class="btn btn-outline-light">Search</button>
                     </form>
                     <div class="form-inline ml-auto">
-                        <button class="btn btn-outline-light" href="/ShoeStore/login.html">Login</button>
+                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
                     </div>
                     
                 </div>
@@ -58,7 +58,7 @@
                                     <ins>${prod.price}</ins>
                                     <div>
                                         <button style="border-radius: 10px">Add to cart</button>
-                                        <button style="border-radius: 10px">View description</button>
+                                        <button style="border-radius: 10px" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>
                                         
                                     </div>                                    
                                 </div>

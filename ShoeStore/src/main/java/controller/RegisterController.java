@@ -17,11 +17,11 @@ import org.springframework.web.servlet.ModelAndView;
  * @author ASUS
  */
 @Controller
-public class LoginController {
+public class RegisterController {
     @Autowired
     
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView getAll(HttpServletRequest request){
-        return new ModelAndView("loginview");
+        return new ModelAndView("registerview");
     }
 }

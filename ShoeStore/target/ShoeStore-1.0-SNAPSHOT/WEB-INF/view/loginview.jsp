@@ -133,7 +133,7 @@
                 </div>
                 <input type="submit" value="Login">
                 <div class="signup_link">
-                    Not a member? <a href="#">Sign Up</a>
+                    Not a member? <a onclick="window.location.href='/ShoeStore/register.html'">Sign Up</a>
                 </div>
                 <div class="signup_link">
                     <a href="/ShoeStore/product/list.html">Visit shop</a>

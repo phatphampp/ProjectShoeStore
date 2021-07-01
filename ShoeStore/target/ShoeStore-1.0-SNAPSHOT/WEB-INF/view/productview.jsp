@@ -20,6 +20,8 @@
         </script>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <link rel="stylesheet" href="/ShoeStore/css/style.css">
     </head>
     <body>
         <div>
@@ -52,15 +54,15 @@
                     <div class="row">
                         <c:forEach var="prod" items="${list}">
                             <div class="col-md-3 col-sm-6" style="height: 400px; width: 292px; text-align: center; margin-top: 50px; ">
-                                <div class="single-shop-product">
-                                    <div class="product-image">
-                                        <img src="/ShoeStore/image/${prod.image}" alt="${prod.image}" height="260px" width="230px">
+                                <div>
+                                    <div>
+                                        <img src="/ShoeStore/image/${prod.image}" alt="${prod.image}" height="260px" width="230px" style="border-radius: 5px">
                                     </div>
                                     <h3><a>${prod.prodName}</a></h2>
                                     <ins>${prod.price}</ins>
                                     <div>
-                                        <button style="border-radius: 10px">Add to cart</button>
-                                        <button style="border-radius: 10px" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>
+                                        <button class="btn btn-outline-light" >Add to cart</button>
+                                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>
                                         
                                     </div>                                    
                                 </div>

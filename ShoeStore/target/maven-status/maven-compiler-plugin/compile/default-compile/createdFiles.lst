@@ -1,4 +1,6 @@
 dao\ProductDao.class
 RowMapper\ProductRowMapper.class
+controller\LoginController.class
 controller\ProductController.class
+controller\RegisterController.class
 model\ProductModel.class

@@ -119,7 +119,7 @@
     </head>
     <body>
         <div class="center">
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
             <form method="post">
                 <div class="txt_field">
                     <input type="text" required>
@@ -133,7 +133,7 @@
                 </div>
                 <input type="submit" value="Login">
                 <div class="signup_link">
-                    Not a member? <a onclick="window.location.href='/ShoeStore/register.html'">Sign Up</a>
+                    Not a member? <a href="/ShoeStore/register.html">Sign Up</a>
                 </div>
                 <div class="signup_link">
                     <a href="/ShoeStore/product/list.html">Visit shop</a>

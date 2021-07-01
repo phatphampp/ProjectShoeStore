@@ -41,7 +41,9 @@
                     <div class="form-inline ml-auto">
                         <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
                     </div>
-                    
+                    <div style="margin-left: 30px">
+                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/register.html'">Sign Up</button>
+                    </div>
                 </div>
             </nav>
             

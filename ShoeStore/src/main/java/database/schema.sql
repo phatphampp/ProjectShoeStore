@@ -29,8 +29,6 @@ create table Orders (
     foreign key (customerId) references Account(id)
 );
 
-
-
 create table OrderDetail (
     orderId int,
     productId int,

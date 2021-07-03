@@ -14,7 +14,7 @@
     </head>
     <body class="bg-register">
         <div class="center">
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
             <form method="post" action="/ShoeStore/register/save.html">
                 <div class="txt_field">
                     <input type="text" name="username" required>

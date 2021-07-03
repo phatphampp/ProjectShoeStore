@@ -60,16 +60,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-5">
-                            <img src="/ShoeStore/image/${prod.image}" alt="${prod.prodName}" height="330px" width="300px">
+                            <img src="/ShoeStore/image/${prod.image}" alt="${prod.prodName}" height="330px" width="300px" style="border-radius: 5px;">
                         </div>
                         <div class="col-sm-7">
-                            <h2>${prod.prodName}</h2>
-                            <p>${prod.description}</p>
+                            <h2 class="text-color">${prod.prodName}</h2>
+                            <p class="text-color">${prod.description}</p>
                             <hr>
-                            <h3>Price - ${prod.price}</h3>
-                            <p class="muted">Inclusive of all taxes. Free home delivery.</p>
+                            <h3 class="text-color">Price - ${prod.price}</h3>
+                            <p class="text-color" class="muted">Inclusive of all taxes. Free home delivery.</p>
                             <br>
-                            <p><a href="/ShoeStore/cart/add.html?prodId=${prod.id}" class="btn btn-success btn-large">Buy Online Now</a></p>
+                            <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/cart/add.html?prodId=${prod.id}'">Buy Online Now</button> 
                         </div>
                     </div>
                 </div>

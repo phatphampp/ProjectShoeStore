@@ -70,12 +70,11 @@
                                     <div>
                                         <img src="/ShoeStore/image/${prod.image}" alt="${prod.image}" height="260px" width="230px" style="border-radius: 5px">
                                     </div>
-                                    <h3><a>${prod.prodName}</a></h2>
-                                    <ins>${prod.price}</ins>
+                                    <h3 ><a class='text-color' href="/ShoeStore/cart/add.html?prodId=${prod.id}">${prod.prodName}</a></h2>
+                                    <ins class='text-color'>${prod.price}$</ins>
                                     <div>
                                         <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/cart/add.html?prodId=${prod.id}'">Add to cart</button>
-                                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>
-                                        
+                                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>                                        
                                     </div>                                    
                                 </div>
                             </div>

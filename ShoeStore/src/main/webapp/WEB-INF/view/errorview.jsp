@@ -13,5 +13,8 @@
     </head>
     <body>
         <h1>${title} Fail!</h1>
+        <a href="/ShoeStore/register.html">Sign Up</a>
+        <a href="/ShoeStore/login.html">Sign In</a>
+        <a href="/ShoeStore/product/list.html">Visit shop</a>
     </body>
 </html>

@@ -36,6 +36,5 @@ public class RegisterController {
         }else{
             return new ModelAndView("errorview", "title", "Register");
         }
-        
     }
 }

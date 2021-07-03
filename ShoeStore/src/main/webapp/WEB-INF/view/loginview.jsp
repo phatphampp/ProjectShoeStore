@@ -15,14 +15,14 @@
     <body class="bg-login">
         <div class="center" class="backgroughLogin">
             <h1>Sign Up</h1>
-            <form method="post">
+            <form method="post" action="/ShoeStore/login/handle.html">
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="username" required>
                     <span></span>
                     <label>Username</label>
                 </div>
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <span></span>
                     <label>Password</label>
                 </div>

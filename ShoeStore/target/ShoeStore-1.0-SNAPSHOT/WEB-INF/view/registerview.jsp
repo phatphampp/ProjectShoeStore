@@ -15,23 +15,38 @@
     <body class="bg-register">
         <div class="center">
             <h1>Login</h1>
-            <form method="post">
+            <form method="post" action="/ShoeStore/register/save.html">
                 <div class="txt_field">
-                    <input type="text" required>
+                    <input type="text" name="username" required>
                     <span></span>
                     <label>Username</label>
                 </div>
                 <div class="txt_field">
-                    <input type="password" required>
+                    <input type="password" name="password" required>
                     <span></span>
                     <label>Password</label>
                 </div>
                 <div class="txt_field">
-                    <input type="confirmpassword" required>
+                    <input type="text" name="name" required>
                     <span></span>
-                    <label>Confirm Password</label>
+                    <label>Name</label>
                 </div>
-                <input type="submit" value="Login">
+                <div class="txt_field">
+                    <input type="text" name="address" required>
+                    <span></span>
+                    <label>Address</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" name="email" required>
+                    <span></span>
+                    <label>Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" name="phone" required>
+                    <span></span>
+                    <label>Phone</label>
+                </div>
+                <input type="submit" value="Register">
                 <div class="signup_link">
                     Have an account? <a href="/ShoeStore/login.html">Sign In</a>
                 </div>

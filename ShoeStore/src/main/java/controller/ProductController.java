@@ -8,6 +8,7 @@ package controller;
 import dao.ProductDao;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
+import model.AccountModel;
 import model.ProductModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,7 +35,17 @@ public class ProductController {
         } else {
             lst = dao.search(keyword);
         }
-        return new ModelAndView("productview", "list",lst);
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("productview");
+        
+        mav.addObject("list", lst);
+        
+        AccountModel acc = Utils.Utils.getAccountInSession();
+        if (acc != null) {
+            mav.addObject("acc", acc);
+        }
+        
+        return mav;
     }
     
     @RequestMapping(value = "/product/detail", method = RequestMethod.GET)

@@ -30,7 +30,7 @@
     <bean id="productdao" class="dao.ProductDao">    
         <property name="template" ref="jt"></property>    
     </bean>  
-<!--   <bean id="customerdao" class="dao.CustomerDao">    
+        <bean id="accountdao" class="dao.AccountDao">    
         <property name="template" ref="jt"></property>    
-    </bean>  -->
+    </bean>
 </beans>  

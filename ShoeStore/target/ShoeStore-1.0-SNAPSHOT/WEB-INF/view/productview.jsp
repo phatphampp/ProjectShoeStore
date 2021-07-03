@@ -40,12 +40,24 @@
                         <input type="text" class="form-control mr-sm-2" name="keyword" placeholder="Keyword">
                         <button type="submit" class="btn btn-outline-light">Search</button>
                     </form>
-                    <div class="form-inline ml-auto">
-                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
-                    </div>
-                    <div style="margin-left: 30px">
-                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/register.html'">Sign Up</button>
-                    </div>
+                    <c:choose>
+                        <c:when test="${empty acc}">
+                            <div class="form-inline ml-auto">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
+                            </div>
+                            <div style="margin-left: 30px">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/register.html'">Sign Up</button>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="form-inline ml-auto">
+                                <button class="btn btn-outline-light">${acc.name}</button>
+                            </div>
+                            <div style="margin-left: 30px">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/logout.html'">Logout</button>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </nav>
             

@@ -21,3 +21,23 @@ create table Account (
     phone varchar(128) not null
     
 );
+
+create table Orders (
+    id int AUTO_INCREMENT primary key,
+    amount double not null,
+    customerId int,
+    foreign key (customerId) references Account(id)
+);
+
+
+
+create table OrderDetail (
+    orderId int,
+    productId int,
+    amount int not null,
+    price int not null,
+    quantity int not null,
+    primary key (orderId, productId),
+    foreign key (productId) references Product(id),
+    foreign key (orderId) references Orders(id)
+);

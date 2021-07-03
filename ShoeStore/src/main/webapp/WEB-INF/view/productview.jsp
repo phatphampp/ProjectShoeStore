@@ -73,7 +73,7 @@
                                     <h3><a>${prod.prodName}</a></h2>
                                     <ins>${prod.price}</ins>
                                     <div>
-                                        <button class="btn btn-outline-light" >Add to cart</button>
+                                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/cart/add.html?prodId=${prod.id}'">Add to cart</button>
                                         <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/product/detail.html?prodId=${prod.id}'">View description</button>
                                         
                                     </div>                                    

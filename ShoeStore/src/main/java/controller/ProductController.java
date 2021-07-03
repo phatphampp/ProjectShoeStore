@@ -52,6 +52,17 @@ public class ProductController {
     public ModelAndView productDetail_view(HttpServletRequest request){
         int prodId = Integer.parseInt(request.getParameter("prodId"));        
         ProductModel prod = dao.getById(prodId);
-        return new ModelAndView("productdetailview", "prod",prod);
+        
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("productdetailview");
+        
+        mav.addObject("prod", prod);
+        
+        AccountModel acc = Utils.Utils.getAccountInSession();
+        if (acc != null) {
+            mav.addObject("acc", acc);
+        }
+        
+        return mav;
     }
 }

@@ -27,10 +27,17 @@
     <bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">    
         <property name="dataSource" ref="ds"></property>    
     </bean> 
+    
     <bean id="productdao" class="dao.ProductDao">    
         <property name="template" ref="jt"></property>    
     </bean>  
-        <bean id="accountdao" class="dao.AccountDao">    
+    <bean id="accountdao" class="dao.AccountDao">    
+        <property name="template" ref="jt"></property>    
+    </bean> 
+    <bean id="orderdao" class="dao.OrderDao">    
+        <property name="template" ref="jt"></property>    
+    </bean>
+    <bean id="orderdetaildao" class="dao.OrderDetailDao">    
         <property name="template" ref="jt"></property>    
     </bean>
 </beans>  

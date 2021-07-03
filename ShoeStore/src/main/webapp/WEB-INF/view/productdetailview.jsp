@@ -35,10 +35,24 @@
                         <a href="/ShoeStore/product/list.html" class="nav-item nav-link active">Products</a>
                         <a href="/ShoeStore/cart.html" class="nav-item nav-link">Cart</a>
                     </div>
-                    <div class="form-inline ml-auto">
-                        <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
-                    </div>
-                    
+                    <c:choose>
+                        <c:when test="${empty acc}">
+                            <div class="form-inline ml-auto">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/login.html'">Login</button>
+                            </div>
+                            <div style="margin-left: 30px">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/register.html'">Sign Up</button>
+                            </div>
+                        </c:when>
+                        <c:otherwise>
+                            <div class="form-inline ml-auto">
+                                <button class="btn btn-outline-light">${acc.name}</button>
+                            </div>
+                            <div style="margin-left: 30px">
+                                <button class="btn btn-outline-light" onclick="window.location.href='/ShoeStore/logout.html'">Logout</button>
+                            </div>
+                        </c:otherwise>
+                    </c:choose>
                 </div>
             </nav>
             
@@ -55,7 +69,7 @@
                             <h3>Price - ${prod.price}</h3>
                             <p class="muted">Inclusive of all taxes. Free home delivery.</p>
                             <br>
-                            <p><a href="#" class="btn btn-success btn-large">Buy Online Now</a></p>
+                            <p><a href="/ShoeStore/cart/add.html?prodId=${prod.id}" class="btn btn-success btn-large">Buy Online Now</a></p>
                         </div>
                     </div>
                 </div>

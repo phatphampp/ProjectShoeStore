@@ -6,6 +6,6 @@ Thành viên:
 18600204 - Phạm Thành Phát
 Chức năng: 
 Đăng nhập, Đăng xuất, Tạo tài khoản
-Danh sách sản phẩm
+Danh sách sản phẩm, Tìm kiếm
 Xem chi tiết sản phẩm
 Xem giỏ hàng, thanh toán
